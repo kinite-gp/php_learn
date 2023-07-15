@@ -1,0 +1,12 @@
+<?php
+
+$list_ex = [1,2,3,4,5,6,7,8,9,10];
+
+
+for ($i = 0 ; $i <= 10 ; $i++) {
+    echo "hi<br>";
+}
+
+foreach ($list_ex as $key => $item) {
+    echo "# $key => $item<br>";
+}
