@@ -34,6 +34,12 @@ $say_hi_echo_number = function () use ($number) {
     echo $number;
 };
 
+function echo_list($list, $func) : void {
+    foreach ($list as $item) {
+        echo $func($item)."<br>";
+    }
+}
+
 
 
 
@@ -41,4 +47,7 @@ echo subtraction(12, 2)."<br>";
 echo multiplication(4)."<br>";
 echo multiplier(...$list)."<br>";
 echo add_to_number(10)."<br>";
-$say_hi_echo_number();
+$say_hi_echo_number();echo "<br>";
+echo_list($list,function ($num) {return $num * 2;});
+echo_list($list,function ($num) {return $num ** 2;});
+
