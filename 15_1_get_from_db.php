@@ -14,3 +14,4 @@ $result = mysqli_fetch_all($result);
 var_dump($result);
 
 mysqli_close($connect);
+
